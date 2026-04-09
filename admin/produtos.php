@@ -85,11 +85,20 @@ $mensagem = $_GET['msg'] ?? '';
                     </thead>
                     <tbody>
                         <?php foreach ($produtos as $produto): ?>
+                            <?php
+                            $imagemProduto = trim((string)($produto['imagem'] ?? ''));
+                            $usaLogoPadrao = $imagemProduto === '';
+                            $srcImagemProduto = $usaLogoPadrao ? '../assets/img/logo-doranina.png' : $imagemProduto;
+                            ?>
                             <tr>
                                 <td>#<?= (int)$produto['id']; ?></td>
                                 <td>
                                     <div class="product-mini">
-                                        <img src="<?= htmlspecialchars($produto['imagem'] ?: '../assets/img/logo-doranina.png'); ?>" alt="">
+                                        <img
+                                            class="<?= $usaLogoPadrao ? 'product-mini-logo' : ''; ?>"
+                                            src="<?= htmlspecialchars($srcImagemProduto); ?>"
+                                            alt="<?= htmlspecialchars($usaLogoPadrao ? 'Logo DoraNina' : $produto['nome']); ?>"
+                                        >
                                         <div>
                                             <strong><?= htmlspecialchars($produto['nome']); ?></strong>
                                             <small><?= htmlspecialchars(mb_strimwidth((string)$produto['descricao'], 0, 72, '...')); ?></small>

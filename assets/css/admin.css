@@ -53,7 +53,13 @@ button, input, textarea, select { font: inherit; }
 .login-brand img {
     width: 62px;
     height: 62px;
-    border-radius: 50%;
+    padding: 7px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244, 240, 232, 0.94));
+    border: 1px solid rgba(100, 143, 183, 0.16);
+    box-shadow: 0 10px 24px rgba(73, 96, 117, 0.12);
 }
 .login-brand strong {
     display: block;
@@ -151,7 +157,13 @@ button, input, textarea, select { font: inherit; }
 .sidebar-brand img {
     width: 56px;
     height: 56px;
-    border-radius: 50%;
+    padding: 6px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244, 240, 232, 0.94));
+    border: 1px solid rgba(100, 143, 183, 0.16);
+    box-shadow: 0 10px 24px rgba(73, 96, 117, 0.12);
 }
 .sidebar-brand strong {
     display: block;
@@ -321,6 +333,12 @@ tr:last-child td { border-bottom: 0; }
     object-fit: cover;
     border-radius: 16px;
     background: rgba(126,165,200,0.14);
+}
+.product-mini img.product-mini-logo {
+    object-fit: contain;
+    padding: 6px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244, 240, 232, 0.94));
+    border: 1px solid rgba(100, 143, 183, 0.16);
 }
 .product-mini strong {
     display: block;
