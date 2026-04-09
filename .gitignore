@@ -1,7 +1,8 @@
 .env
 .env.local
 .env.production
+.env.*
 .vercel
 email_cache
-
-.vercel
+.DS_Store
+Thumbs.db
