@@ -50,6 +50,8 @@ if (!$dbDisponivel) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar conta | DoraNina</title>
+    <link rel="icon" type="image/png" href="assets/img/logo-doranina.png?v=<?= substr(md5_file(__DIR__ . '/assets/img/logo-doranina.png'), 0, 12); ?>">
+    <link rel="apple-touch-icon" href="assets/img/logo-doranina.png?v=<?= substr(md5_file(__DIR__ . '/assets/img/logo-doranina.png'), 0, 12); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">

@@ -157,6 +157,8 @@ enviarEmailPedido($pedidoEmail, $itensNormalizados);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido realizado</title>
+    <link rel="icon" type="image/png" href="assets/img/logo-doranina.png?v=<?= substr(md5_file(__DIR__ . '/assets/img/logo-doranina.png'), 0, 12); ?>">
+    <link rel="apple-touch-icon" href="assets/img/logo-doranina.png?v=<?= substr(md5_file(__DIR__ . '/assets/img/logo-doranina.png'), 0, 12); ?>">
     <style>
         :root {
             --bg: #f5f1e8;
